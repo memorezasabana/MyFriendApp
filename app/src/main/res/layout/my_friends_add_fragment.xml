@@ -1,0 +1,120 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@drawable/bg3"
+        android:orientation="vertical">
+
+    <ImageView
+            android:layout_width="122dp"
+            android:layout_height="93dp"
+            android:layout_gravity="center"
+            android:paddingTop="20dp"
+            app:srcCompat="@drawable/user" />
+
+    <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:layout_margin="16dp"
+            android:fontFamily="@font/coffee_latte"
+            android:text="Tambah Teman"
+            android:textColor="#000000"
+            android:textSize="24sp" />
+
+
+    <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="16dp"
+            android:orientation="vertical">
+
+        <EditText
+                android:id="@+id/edit_name"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/coffee_latte"
+                android:hint="Nama"
+                android:imeOptions="actionDone"
+                android:inputType="text"
+                android:shadowColor="#000000"
+                android:textColor="#000000"
+                android:textColorHighlight="#000000"
+                android:textColorHint="#000000"
+                android:textColorLink="#000000"
+                android:textSize="22sp" />
+
+        <Spinner
+                android:id="@+id/spinner_gender"
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:layout_marginTop="16dp"
+                android:entries="@array/gender_list"
+                android:textColor="#000000">
+
+        </Spinner>
+
+        <EditText
+                android:id="@+id/Email"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="16dp"
+                android:fontFamily="@font/coffee_latte"
+                android:hint="Email"
+                android:imeOptions="actionNext"
+                android:inputType="textEmailAddress"
+                android:textColor="#000000"
+                android:textColorHighlight="#000000"
+                android:textColorHint="#000000"
+                android:textColorLink="#000000"
+                android:textSize="22sp" />
+
+        <EditText
+                android:id="@+id/Telp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="16dp"
+                android:fontFamily="@font/coffee_latte"
+                android:hint="Telp"
+                android:imeOptions="actionNext"
+                android:inputType="number"
+                android:textColor="#000000"
+                android:textColorHighlight="#000000"
+                android:textColorHint="#000000"
+                android:textColorLink="#000000"
+                android:textSize="22sp" />
+
+
+        <EditText
+                android:id="@+id/Alamat"
+                android:layout_width="match_parent"
+                android:layout_height="120dp"
+                android:layout_marginTop="16dp"
+                android:fontFamily="@font/coffee_latte"
+                android:gravity="top"
+                android:hint="Alamat"
+                android:imeOptions="actionDone"
+                android:inputType="textMultiLine"
+                android:shadowColor="#000000"
+                android:textColor="#000000"
+                android:textColorHighlight="#000000"
+                android:textColorHint="#000000"
+                android:textColorLink="#000000"
+                android:textSize="22sp" />
+
+        <Button
+                android:id="@+id/btnSave"
+                android:layout_width="134dp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginTop="24dp"
+                android:background="@drawable/btn2"
+                android:fontFamily="@font/coffee_latte"
+                android:shadowColor="#000000"
+                android:text="simpan"
+                android:textColor="#000000"
+                android:textSize="18sp" />
+    </LinearLayout>
+
+</LinearLayout>
